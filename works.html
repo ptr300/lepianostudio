@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Works — Firstname Lastname</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" id="site-name">Firstname Lastname</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Lessons</a>
+        <a href="works.html" class="active">Works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Works Catalog</h1>
+    <p class="lead">A growing catalog of sheet music and compositions. Links will point to third-party stores or PDF previews.</p>
+
+    <table class="works-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Available</th>
+        </tr>
+      </thead>
+      <tbody id="works-tbody">
+      </tbody>
+    </table>
+
+    <p class="note">Note: In the future this page will be backed by a CSV that contains titles and links to third-party stores. For now replace entries manually or add `data/works.csv`.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year-3"></span> Firstname Lastname</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

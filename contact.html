@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Firstname Lastname</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand" id="site-name">Firstname Lastname</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Lessons</a>
+        <a href="works.html">Works</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p class="lead">I'd love to hear from you. Use one of the contact options below to reach out about lessons, repertoire, or bookings.</p>
+
+    <section class="contact-methods">
+      <p><strong>Email:</strong> <a id="contact-email" href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p><strong>Phone:</strong> <a id="contact-phone" href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p><strong>Prefer to send a message?</strong> Use the form below (this form opens your email client):</p>
+
+      <form class="contact-form" action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label>Name<br><input type="text" name="name" required></label>
+        <label>Email<br><input type="email" name="email" required></label>
+        <label>Message<br><textarea name="message" rows="5" required></textarea></label>
+        <p><button type="submit" class="button">Send message</button></p>
+      </form>
+
+      <p class="note">Tip: For a hosted contact form without mailto, consider Formspree or Netlify Forms — I can integrate that if you want.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year-4"></span> Firstname Lastname</small>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -26,3 +26,5 @@ main .wrap{padding-top:2.5rem;padding-bottom:3rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:1rem;padding:0;list-style:none}
 .grid img{width:100%;height:auto;display:block}
 .site-footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.9rem;text-align:center}
+.portrait{float:right;width:min(16rem,45%);height:auto;margin:0 0 1rem 1.5rem}
+@media(max-width:40rem){.portrait{float:none;display:block;width:100%;max-width:20rem;margin:0 0 1rem}}

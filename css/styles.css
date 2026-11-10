@@ -50,3 +50,9 @@ main .info .wrap{padding-top:0;padding-bottom:0}
 main .cta .wrap{padding-top:0;padding-bottom:0}
 
 .site-footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.9rem;text-align:center}
+
+/* Page fade: content fades in on load and fades out when you click a link */
+@keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+main,.keys{animation:fadein .35s ease-out}
+.leaving main,.leaving .keys{opacity:0;transition:opacity .2s ease-in}
+@media(prefers-reduced-motion:reduce){main,.keys{animation:none}}

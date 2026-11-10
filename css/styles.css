@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap');
 /* THEME COLORS: change a color here and it changes everywhere */
 :root{
   --navy:#162B6F; --blue:#5570B4; --pink:#E8A8EA; --periwinkle:#839BEC; --lavender:#BAB0C4;
@@ -12,14 +13,14 @@ p{margin:0 0 1em}a{color:var(--accent)}a:focus-visible,button:focus-visible{outl
 .wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}.wide{max-width:60rem}
 
 /* Header: big gradient bar, name centered, links underneath */
-.site-header{background:linear-gradient(100deg,var(--navy) 0%,var(--blue) 100%);color:#fff;text-align:center;border-bottom:.45rem solid;border-image:linear-gradient(90deg,var(--periwinkle),var(--pink),var(--lavender)) 1}
+.site-header{background:radial-gradient(circle at 41.41666730244955% 80.16667048136394%, #E8A8EA 0%, 17.5%, rgba(232,168,234,0) 35%), radial-gradient(circle at 20.416666666666668% 42.833334604899086%, #E8A8EA 0%, 17.5%, rgba(232,168,234,0) 35%), radial-gradient(circle at 94.35384114583333% 89.61588541666666%, rgba(131,155,236,0.64) 0%, 20%, rgba(131,155,236,0) 40%), radial-gradient(circle at 6.503906249999999% 88.037109375%, rgba(85,112,180,0.99) 0%, 25%, rgba(85,112,180,0) 50%), radial-gradient(circle at 91.25% 18.333333333333332%, #BAB0C4 0%, 42%, rgba(186,176,196,0) 70%), radial-gradient(circle at 48.9013671875% 49.521484375%, #FFFFFF 0%, 100%, rgba(255,255,255,0) 100%);background-color:#fff;color:var(--navy);text-align:center;border-bottom:1px solid var(--lavender)}
 .header-inner{max-width:60rem;margin:0 auto;padding:1.75rem 1.25rem 1rem;display:flex;flex-direction:column;align-items:center;gap:.75rem}
-.brand{font:700 clamp(2rem,6vw,3.25rem)/1.1 var(--serif);color:#fff;text-decoration:none}
+.brand{font:700 clamp(2rem,6vw,3.25rem)/1.1 var(--serif);color:var(--navy);text-decoration:none}
 .nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem 1.5rem;list-style:none;margin:0;padding:0}
-.nav a{color:#fff;text-decoration:none;padding:.35rem 0;display:inline-block}
-.nav a:hover,.nav a[aria-current=page]{box-shadow:inset 0 -3px var(--pink)}
+.nav a{color:var(--navy);text-decoration:none;padding:.35rem 0;display:inline-block}
+.nav a:hover,.nav a[aria-current=page]{box-shadow:inset 0 -3px var(--navy)}
 .has-sub{position:relative}
-.sub{list-style:none;margin:0;padding:.4rem 0;position:absolute;left:50%;transform:translateX(-50%);top:100%;min-width:12rem;background:var(--navy);border:1px solid var(--periwinkle);display:none;z-index:5}
+.sub{list-style:none;margin:0;padding:.4rem 0;position:absolute;left:50%;transform:translateX(-50%);top:100%;min-width:12rem;background:#fff;border:1px solid var(--periwinkle);display:none;z-index:5}
 .has-sub:hover .sub,.has-sub:focus-within .sub{display:block}
 .sub a{padding:.4rem .75rem;display:block}
 @media(max-width:40rem){.sub{position:static;transform:none;display:block;border:0;padding:0}}
@@ -39,7 +40,7 @@ main .wrap{padding-top:2.5rem;padding-bottom:3rem}
 @media(max-width:40rem){.portrait{float:none;display:block;width:100%;max-width:20rem;margin:0 0 1rem}}
 
 /* Home: General Information section */
-.info{background:var(--wash);padding:2.5rem 0}
+.info{background:#c0ccf2;padding:2.5rem 0}
 main .info .wrap{padding-top:0;padding-bottom:0}
 .info h2{text-align:center;margin-top:0}
 .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:2rem;text-align:center}
